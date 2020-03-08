@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing:border-box;}
+body{margin:0; padding:0; color:#000; font: normal 12px/24px Verdana, Arial, Helvetica, sans-serif;}
+html, body {height: 100%;}
+img{border:none;}
+ul, li, input{margin:0px; padding:0px; list-style:none;}
+h1, h2, h3, p, ul, li, dl, dt {margin:0; padding:0;}
+h1{font-size: 36px;}
+a{text-decoration:none}
+.clear{clear:both}
+
+.header{border-top:6px solid #002404; height:160px;}
+.header .top-contact{height:27px; color:#FFFFFF; line-height:27px; float:right;}
+.header .top-contact span {float:left;}
+.header .top-contact .left{height:27px; width:29px; background:url(../images/top-angle.png) top left no-repeat; float:left;}
+.header .top-contact .bg{background:#002404; float:left; padding:0 15px; font-size:12px;}
+.header .top-contact a {width:17px; height:16px; background-position:left center; background-repeat:no-repeat; display:block; float:right; margin-top:6px}
+.header .top-contact a.twitter {background-image:url(../images/icon-twitter.png);}
+.header .top-contact a.facebook {background-image:url(../images/icon-facebook.png);}
+.header .top-contact a.googleplus {background-image:url(../images/icon-googleplus.png);}
+.header .top-contact a.youtube {background-image:url(../images/icon-youtube.png);}
+.header .header-wrapper {width:1170px; margin:0px auto}
+.logo{height:85px; width:610px; background:url(../images/logo.png) top left no-repeat; float:left; margin-top:50px;}
+
+/* Main Navigation CSS Starts Here */
+.menu {float:right; color:#FFFFFF; margin-top:30px; height:40px;}
+.menu ul ul {display: none;}
+.menu ul li:hover > ul {display: block;}
+.menu ul {list-style: none; position: relative; display: inline-table;}
+.menu ul:after {content: ""; clear: both; display: block;}
+.menu ul li {float: left; display:inline;}
+.menu ul li a {display: block; float:left; text-decoration:none; color:#002404; padding:0; font-weight:bold; padding:55px 2px 0px; height:75px; width:auto; margin-right:15px; text-transform:uppercase; font-size:14px; text-align:center}
+.menu ul li a.home, .menu ul li a.about, .menu ul li a.course, .menu ul li a.gallery, .menu ul li a.menus, .menu ul li a.contact{background-position:center top; background-repeat:no-repeat;}
+.menu ul li a.home {background-image:url(../images/menu-home.png);}
+.menu ul li a.about {background-image:url(../images/menu-about.png);}
+.menu ul li a.course {background-image:url(../images/menu-course.png);}
+.menu ul li a.gallery {background-image:url(../images/menu-gallery.png);}
+.menu ul li a.menus {background-image:url(../images/menu-menu.png);}
+.menu ul li a.contact {background-image:url(../images/menu-contact.png);}
+
+/*.menu ul li a:hover {background: #4d4d4f; color:#FFF;}
+.menu ul li a.active {background: #cb2127; color:#FFF;}*/
+
+.menu ul li:last-child{ border-right:none;}
+.menu ul ul {background: #002404; position: absolute; top: 100%; z-index:999; width:220px; padding:10px; margin-left:-75px;}
+.menu ul ul li {float: left; position: relative; background:none; margin:0px; width:220px;  border-right:none;}
+.menu ul ul li a {text-transform: capitalize; color: #fbce00 !important; padding: 5px 0 0 35px; height:35px; white-space:nowrap; width:225px; font-weight:normal; font-size:13px;  text-align:left}	
+/*.menu ul ul li a:hover {background: #007eb9; color:#FFF !important;}*/
+.menu ul ul ul {position: absolute; left: 100%; top:0;}
+
+.wrapper{position:relative; top:110px}
+
+/*--banner CSS--*/
+.banner-home{height:532px; background:url(../images/home-banner.png) top center no-repeat;}
+.home-msg{height:495px; padding-top:23px; background:url(../images/home-msg-bg.png) top center no-repeat; margin-bottom:20px; font-size:14px;}
+.home-msg p {margin-bottom:10px; text-align:justify}
+.home-msg img {float:left; margin-right:30px;}
+.home-msg h1{color:#002404;margin-bottom:20px; text-align:center; text-transform:uppercase}
+.home-msg-wrapper{width:1170px; margin:0 auto;}
+.banner-innerpage{height:257px;background:url(../images/innerpage-banner.png) top center no-repeat;}
+.title{height:50px; background:url(../images/innerpage-header-bg.png) top center no-repeat;}
+.title .title-wrapper {width:1170px; margin:0 auto;}
+.title h1{text-transform:uppercase; color:#002404; font-size:30px; margin-top:10px; float:left}
+
+.marquee-strip{background:#002404; width:100%; height:30px; line-height:30px; font-weight:bold;color:#fbce00; font-size:14px;}
+.marquee-strip span {margin:0 25px;}
+
+.home-content h2{color:#002404; margin-bottom:10px; font-size:24px;}
+.home-content ul li {width:46%; margin:2%; float:left;}
+.innerpage-content-wrapper, .home-content-wrapper {width:1170px; margin:0 auto 30px;}
+
+.left-menu{float:left;width: 230px; margin-right:30px;}
+.left-menu .bg{background:url(../images/leftmenu-bg.png) repeat-y left top; width: 230px;}
+.left-menu .bottom{background:url(../images/leftmenu-footer.png) no-repeat left top; width: 230px; height:48px;}
+.left-menu ul{margin:0 15px;}
+.left-menu li{border-bottom:1px solid #004a08; float:left; width:100%; padding:5px 0;}
+.left-menu a{color:#fbce00; padding-left:35px; display:block;}
+.msg, .courses-offered, .department, .faculty, .library, .development, .placement, .infrastructure, .hostel, .policy, .location, .education, .seminars, .cafeteria, .transport{background-position:left center; background-repeat:no-repeat;}
+.msg{background-image:url(../images/icon-msg.png);}
+.courses-offered{background-image:url(../images/icon-course.png);}
+.department{background-image:url(../images/icon-department.png);}
+.faculty{background-image:url(../images/icon-faculty.png);}
+.library{background-image:url(../images/icon-library.png);}
+.development{background-image:url(../images/icon-development.png);}
+.placement{background-image:url(../images/icon-placement.png);}
+.infrastructure{background-image:url(../images/icon-infrastructure.png);}
+.hostel{background-image:url(../images/icon-hostel.png);}
+.policy{background-image:url(../images/icon-policy.png);}
+.location{background-image:url(../images/icon-location.png);}
+.education{background-image:url(../images/icon-education.png);}
+.seminars{background-image:url(../images/icon-seminars.png);}
+.cafeteria{background-image:url(../images/icon-cafeteria.png);}
+.transport{background-image:url(../images/icon-transport.png);}
+
+.main-content{width:910px; float:left; padding-top:30px; font-size:16px;}
+.main-content h2 {color:#002404; margin-bottom:10px;}
+.main-content h3 {color:#002404; margin-bottom:10px;}
+.main-content p{margin-bottom:10px; text-align:justify}
+.img-chairman{float:right; margin-left:20px; margin-bottom:100px}
+.main-content  dt{color:#002404; margin:5px 0px; font-weight:bold; font-size:16px}
+
+table.grid a {background-color: #cb2127; border-radius: 3px; color: #fff; cursor: pointer; display: block; font-size: 12px; line-height: 1.33;
+    padding: 5px 10px; text-align: center; width: 80px;}
+table.grid a:hover {background-color: #4D4D4F; color: #fff; text-align:center}
+table.grid {border: 1px solid #ddd; border-collapse: collapse; font-size: 13px; width: 100%;}
+table.grid th {background: #002404; border: 1px solid #999; color: #ffffff; padding: 5px; text-align:center}
+table.grid td {border: 1px solid #002404; padding: 5px;}
+
+.clients-scroll {width:1170px; margin:10px auto; height:100px; overflow:hidden}
+.clients-scroll li {width:216px !important; height:100px; float:left; margin:0 10px 0 0 !important; display: inline}
+.clients-scroll li img{border:2px solid #fbce00; width:216px; height:100px; display: block}
+
+ul.clients{width:904px; margin:10px auto; overflow:hidden}
+ul.clients li img {border:2px solid #fbce00; width:216px; float:left; margin-right:10px; margin-bottom:10px;}
+ul.clients li:nth-child(4n+4) {margin-right: 0;}
+
+ul.images{width:630px; margin:30px auto; overflow:hidden}
+ul.images li img {border:4px solid #fbce00; width:300px; float:left; margin-right:10px;margin-bottom:10px;}
+
+/* Contact Us Page */
+.contact-wrapper{width:1170px; margin:0 auto}
+.col-left {float: left;  width: 60%; margin-right: 5%;}
+.col-right {float: left; width: 35%;}
+.col-left h3, .col-right h3 {color: #002404; font-weight: bold;}
+.contact-form input[type="text"], .contact-form textarea, .contact-form select {background-color: whitesmoke; border: 1px solid #c5c5c5; box-sizing: border-box; margin-bottom: 10px; min-height: 30px;  padding: 10px; width: 100%;}
+.contact-form textarea {font-family: 'Raleway', sans-serif; font-size: 14px; height: 75px;}
+.contact-form input[type="submit"] {background-color: #cb2127; border: 0 none; color: #fff; cursor: pointer; font-weight: bold; margin: 0 0 30px; outline: medium none !important; padding:7px 20px; transition: all 0.3s ease 0s;}
+.contact-form input[type="submit"]:hover {background: #5e5e5e;}
+
+
+/*************************************
+Footer CSS
+*************************************/ 
+.footer{background:#3a3a3c; padding:30px 0; color:#FFF; font-size:14px;}
+.footer a {text-decoration:none; color:#FFF;}
+.footer .left {float: left;}
+.footer .right {float: right; border-left:1px solid #707070; padding-left:50px;}
+.footer .center {margin:0 0 0 130px; display:inline-block;}
+.footer .center ul {margin-left:45px;}
+.footer .center li {float:left; line-height:140%; margin-right:50px; }
+.footer .center li:last-child {border-right: none; margin-right:0px;}
+.footer .center h3 {background:url(../images/icon-contact.png) left center no-repeat; padding-left:40px;}
+
+.footer-wrapper{width:1170px; margin:0 auto; overflow:hidden;}
+.footer h3 {margin-bottom:15px; font-size:22px;}
+ul.social-icon{overflow:hidden;}
+ul.social-icon li{list-style:none; margin-bottom:8px;}
+ul.social-icon li:last-child{margin-bottom:0;}
+ul.social-icon a {display:block; height:25px;}
+ul.social-icon li a:hover{color: #a4131b}
+ul.social-icon li a span:hover{color: #a4131b}
+ul.social-icon li a {background-image:url(../images/icon-social.png); background-repeat:no-repeat; display:block; padding-left:35px}
+ul.social-icon li a.twitter{background-position:0 0;}
+ul.social-icon li a.twitter:hover{background-position:-145px 0px;}
+ul.social-icon li a.facebook{background-position:-5px -27px;}
+ul.social-icon li a.facebook:hover{background-position:-149px -27px;}
+ul.social-icon li a.googleplus{background-position:-3px -57px;}
+ul.social-icon li a.googleplus:hover{background-position:-147px -57px;}
+ul.social-icon li a.youtube{background-position:-1px -85px;}
+ul.social-icon li a.youtube:hover{background-position:-145px -85px;}
+
+.copyright{font-size:14px; line-height:140%;}
+.copyright span{display:block; margin-left:16px; font-size:13px}
